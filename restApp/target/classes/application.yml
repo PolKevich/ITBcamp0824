@@ -1,0 +1,18 @@
+spring:
+  liquibase:
+    enabled: true
+    change-log: db/changelog/db.changelog-master.yaml
+  datasource:
+    driverClassName: com.mysql.cj.jdbc.Driver
+    url: "jdbc:mysql://localhost:3306/bcampprojectdb"
+    username: "root"
+    password: "169120609"
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL8Dialect
+    hibernate:
+        ddl-auto: none
+
+---
+server:
+  port: 8080
+---
