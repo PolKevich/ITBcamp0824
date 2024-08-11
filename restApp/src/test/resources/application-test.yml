@@ -1,0 +1,13 @@
+spring:
+  jpa:
+    generate-ddl: false
+    show-sql: true
+    hibernate:
+      ddl-auto: validate
+  datasource:
+    username: test
+    password: test
+---
+server:
+  port: 8080
+---
